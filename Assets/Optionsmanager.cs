@@ -18,7 +18,8 @@ public class Optionsmanager : MonoBehaviour
         print(PlayerPrefsManager.GetDifficulty());
         volumeSlider.value = PlayerPrefsManager.GetMasterVolume();
         difficultySlider.value = PlayerPrefsManager.GetDifficulty();
-        audioManager = GameObject.FindObjectOfType<AudioManager>();
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        //audioManager = GameObject.FindObjectOfType<AudioManager>();
       
     }
 
